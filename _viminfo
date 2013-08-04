@@ -1,0 +1,405 @@
+# この viminfo ファイルは Vim 7.3 によって生成されました.
+# 変更する際には十分注意してください!
+
+# このファイルが書かれた時の 'encoding' の値
+*encoding=cp932
+
+
+# hlsearch on (H) or off (h):
+~h
+# 最後の 検索パターン:
+~MSle0~/sola
+
+# 最後に置換された文字列:
+$
+
+# コマンドライン 項目の履歴 (新しいものから古いものへ):
+:NeoBundleInstall
+:w
+:wq
+:colorscheme solarized
+:q
+:e ~/.vimrc
+:uf
+:uj
+:un
+:bf
+:Unite c:\
+:Unite -auto-preview
+:Unite
+:UniteWithBufferDir
+:UniteWithCurrentDir
+:UniteBookmarkAdd
+:e vimrc_local.vim
+:q!
+:source gvimrc
+:e gvimrc
+
+# 検索文字列 項目の履歴 (新しいものから古いものへ):
+?/sola
+?/NeoBundle
+?/ret
+?/rete
+?/font
+?/neocmpl
+?/=file
+?/hist
+?/sub
+?/subfun
+?/sample.c
+?/dark
+?/light
+?/C
+?/documents
+?/kouki
+?/users
+?/ricty
+?/color
+?/c
+
+# 式 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# レジスタ:
+""0	CHAR	0
+	vim-easymotion
+"1	CHAR	0
+	desert
+	
+"2	LINE	0
+	{
+	}
+"3	LINE	0
+		printf("Hello World!!\n");
+		return 0;
+"4	LINE	0
+	
+"5	LINE	0
+	colorscheme solarized
+"6	BLOCK	0
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+"7	BLOCK	0
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+"8	LINE	0
+	file
+"9	LINE	0
+	set background dark
+"-	CHAR	0
+	return 
+
+# ファイルマーク:
+'0  15  5  ~\.vimrc
+'1  13  41  ~\.vimrc
+'2  1  0  ~\.vimrc
+'3  7  1  ~\Documents\C\sample.c
+'4  15  0  ~\Documents\C\sample.c
+'5  1  0  ~\Documents\C\sample.c
+'6  2  0  C:\tool\vim\vimrc_local.vim
+'7  56  0  C:\tool\vim\gvimrc
+'8  12  21  ~\Documents\C\sample.c
+'9  9  72  ~\Documents\C\sample.c
+
+# ジャンプリスト (新しいものが先):
+-'  15  5  ~\.vimrc
+-'  21  0  ~\.vimrc
+-'  13  1  ~\.vimrc
+-'  16  0  ~\.vimrc
+-'  14  1  ~\.vimrc
+-'  7  26  ~\.vimrc
+-'  1  0  ~\.vimrc
+-'  7  1  ~\Documents\C\sample.c
+-'  5  0  ~\Documents\C\sample.c
+-'  4  0  ~\Documents\C\sample.c
+-'  6  9  ~\Documents\C\sample.c
+-'  9  0  ~\Documents\C\sample.c
+-'  1  0  ~\Documents\C\sample.c
+-'  15  0  ~\Documents\C\sample.c
+-'  2  0  C:\tool\vim\vimrc_local.vim
+-'  1  0  C:\tool\vim\vimrc_local.vim
+-'  56  0  C:\tool\vim\gvimrc
+-'  178  0  C:\tool\vim\gvimrc
+-'  75  17  C:\tool\vim\gvimrc
+-'  82  15  C:\tool\vim\gvimrc
+-'  65  17  C:\tool\vim\vimrc_local.vim
+-'  12  21  ~\Documents\C\sample.c
+-'  14  0  ~\Documents\C\sample.c
+-'  3  0  ~\Documents\C\sample.c
+-'  16  0  ~\Documents\C\sample.c
+-'  1  1  C:\tool\vim\[unite] - default
+-'  2  0  ~\Documents\C\sample.c
+-'  34  18  C:\tool\vim\gvimrc
+-'  67  15  C:\tool\vim\gvimrc
+-'  69  0  C:\tool\vim\gvimrc
+-'  50  19  C:\tool\vim\gvimrc
+-'  11  7  ~\Documents\
+-'  3  4  ~\Documents\
+-'  22  0  ~\Documents\
+-'  13  0  ~\
+-'  16  0  C:\Users\
+-'  8  0  C:\tool\vim
+-'  61  38  C:\tool\vim\gvimrc
+-'  7  0  C:\tool\vim\gvimrc
+-'  74  32  C:\tool\vim\gvimrc
+-'  66  0  C:\tool\vim\gvimrc
+-'  5  0  C:\tool\vim\gvimrc
+-'  21  0  C:\tool\vim\vimrc
+-'  2  8  C:\tool\vim\vimrc
+-'  73  32  C:\tool\vim\gvimrc
+-'  20  0  C:\tool\vim
+-'  11  7  ~\Documents\
+-'  3  4  ~\Documents\
+-'  22  0  ~\Documents\
+-'  13  0  ~\
+-'  16  0  C:\Users\
+-'  8  0  C:\tool\vim
+-'  20  0  C:\tool\vim
+-'  13  7  ~\Documents\C\sample.c
+-'  10  0  ~\documents\c\
+-'  11  7  ~\Documents\
+-'  3  4  ~\Documents\
+-'  22  0  ~\Documents\
+-'  13  0  ~\
+-'  16  0  C:\Users\
+-'  8  0  C:\tool\vim
+-'  7  1  ~\Documents\C\sample.c
+-'  5  0  ~\Documents\C\sample.c
+-'  4  0  ~\Documents\C\sample.c
+-'  6  9  ~\Documents\C\sample.c
+-'  9  0  ~\Documents\C\sample.c
+-'  1  0  ~\Documents\C\sample.c
+-'  15  0  ~\Documents\C\sample.c
+-'  2  0  C:\tool\vim\vimrc_local.vim
+-'  1  0  C:\tool\vim\vimrc_local.vim
+-'  56  0  C:\tool\vim\gvimrc
+-'  178  0  C:\tool\vim\gvimrc
+-'  75  17  C:\tool\vim\gvimrc
+-'  82  15  C:\tool\vim\gvimrc
+-'  65  17  C:\tool\vim\vimrc_local.vim
+-'  12  21  ~\Documents\C\sample.c
+-'  14  0  ~\Documents\C\sample.c
+-'  3  0  ~\Documents\C\sample.c
+-'  16  0  ~\Documents\C\sample.c
+-'  1  1  C:\tool\vim\[unite] - default
+-'  2  0  ~\Documents\C\sample.c
+-'  34  18  C:\tool\vim\gvimrc
+-'  67  15  C:\tool\vim\gvimrc
+-'  69  0  C:\tool\vim\gvimrc
+-'  50  19  C:\tool\vim\gvimrc
+-'  11  7  ~\Documents\
+-'  3  4  ~\Documents\
+-'  22  0  ~\Documents\
+-'  13  0  ~\
+-'  16  0  C:\Users\
+-'  8  0  C:\tool\vim
+-'  61  38  C:\tool\vim\gvimrc
+-'  7  0  C:\tool\vim\gvimrc
+-'  74  32  C:\tool\vim\gvimrc
+
+# ファイル内マークの履歴 (新しいものから古いもの):
+
+> ~\.vimrc
+	"	15	5
+	^	23	35
+	.	25	0
+	+	6	0
+	+	4	20
+	+	29	0
+	+	16	0
+	+	25	0
+
+> ~\Documents\C\sample.c
+	"	7	1
+	^	6	10
+	.	8	0
+	+	1	0
+	+	9	0
+	+	16	0
+	+	9	10
+	+	16	0
+	+	9	0
+	+	9	0
+	+	16	0
+	+	10	0
+	+	15	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	8	0
+	+	8	0
+	+	8	0
+	+	8	0
+	+	8	0
+	+	8	0
+
+> C:\tool\vim\[unite] - default
+	"	1	7
+	^	1	8
+	.	4	0
+	+	40	0
+	+	1	0
+	+	1	0
+	+	40	0
+	+	40	0
+	+	39	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	23	0
+	+	1	0
+	+	5	0
+	+	4	0
+
+> C:\tool\vim\[unite] - register
+	"	2	4
+	^	1	2
+	.	2	0
+	+	2	0
+
+> C:\tool\vim\vimrc_local.vim
+	"	2	0
+	^	65	18
+	.	2	0
+	+	3	0
+	+	3	0
+	+	6	0
+	+	4	6
+	+	8	4
+	+	48	0
+	+	60	0
+	+	48	0
+	+	49	6
+	+	60	0
+	+	53	0
+	+	60	0
+	+	60	0
+	+	60	0
+	+	53	39
+	+	55	0
+	+	55	0
+	+	56	0
+	+	57	0
+	+	58	0
+	+	60	0
+	+	60	0
+	+	60	0
+	+	55	26
+	+	56	50
+	+	50	0
+	+	50	0
+	+	56	55
+	+	57	50
+	+	58	35
+	+	56	7
+	+	57	7
+	+	58	7
+	+	60	0
+	+	58	0
+	+	59	0
+	+	2	40
+	+	2	0
+	+	2	29
+	+	30	0
+	+	81	28
+	+	61	0
+	+	65	0
+	+	62	0
+	+	63	11
+	+	64	0
+	+	65	12
+	+	65	14
+	+	65	16
+	+	65	18
+	+	65	20
+	+	65	0
+	+	2	0
+
+> C:\tool\vim\gvimrc
+	"	56	0
+	^	56	0
+	.	56	0
+	+	74	31
+	+	7	0
+	+	74	0
+	+	7	0
+	+	74	0
+	+	75	2
+	+	74	0
+	+	66	20
+	+	66	0
+	+	66	0
+	+	67	15
+	+	67	0
+	+	74	31
+	+	69	0
+	+	67	18
+	+	74	3
+	+	75	23
+	+	76	0
+	+	75	23
+	+	56	0
+
+> ~\Documents\C\sub.c
+	"	5	4
+
+> C:\tool\vim\[unite] - action - 1
+	"	2	2
+	^	1	2
+	.	2	0
+	+	22	0
+	+	1	0
+	+	2	0
+
+> ~\documents\c\sub\sub.c
+	"	7	0
+	^	6	8
+	.	6	7
+	+	1	12
+	+	6	7
+
+> C:\tool\vim\vimrc
+	"	43	0
+	^	19	11
+	.	19	10
+	+	1	8
+	+	2	35
+	+	23	0
+	+	4	7
+	+	22	0
+	+	4	0
+	+	7	12
+	+	13	20
+	+	14	8
+	+	13	18
+	+	16	43
+	+	22	0
+	+	20	9
+	+	19	10
+
+> C:\Users\desktop.ini
+	"	3	0

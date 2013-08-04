@@ -1,0 +1,8 @@
+BoldAsFont=yes
+Font=Envy Code R
+FontHeight=16
+Transparency=glass
+OpaqueWhenFocused=no
+BoldAsColour=yes
+AllowBlinking=yes
+FontSmoothing=full
