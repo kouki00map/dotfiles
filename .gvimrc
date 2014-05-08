@@ -70,7 +70,8 @@ colorscheme blue
 "
 if has('win32')
   " Windows用
-  set guifont=MS_Gothic:h12:cSHIFTJIS
+  set guifont=MS_Mincho:h10:cSHIFTJIS
+"  set guifont=MS_Gothic:h12:cSHIFTJIS
   "set guifont=MS_Mincho:h12:cSHIFTJIS
   " 行間隔の設定
   set linespace=1
@@ -89,9 +90,9 @@ endif
 " ウインドウに関する設定:
 "
 " ウインドウの幅
-set columns=80
+set columns=120
 " ウインドウの高さ
-set lines=25
+set lines=50
 " コマンドラインの高さ(GUI使用時)
 set cmdheight=2
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
@@ -130,7 +131,7 @@ set nomousefocus
 " 入力時にマウスポインタを隠す (nomousehide:隠さない)
 set mousehide
 " ビジュアル選択(D&D他)を自動的にクリップボードへ (:help guioptions_a)
-"set guioptions+=a
+set guioptions+=a
 
 "---------------------------------------------------------------------------
 " メニューに関する設定:
@@ -142,9 +143,12 @@ set mousehide
 " いう問題が生じ得る。しかしあまりにレアなケースであると考えられるので無視す
 " る。
 "
-if &guioptions =~# 'M'
-  let &guioptions = substitute(&guioptions, '[mT]', '', 'g')
-endif
+"if &guioptions =~# 'M'
+"  let &guioptions = substitute(&guioptions, '[mT]', '', 'g')
+"endif
+
+set guioptions-=m
+set guioptions-=T
 
 "---------------------------------------------------------------------------
 " その他、見栄えに関する設定:

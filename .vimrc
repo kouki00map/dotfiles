@@ -3,13 +3,17 @@
 "---------------------------------------------------------
 filetype off
 if has('vim_starting')
-	set runtimepath+=~/.vim/neobundle.vim
+	set runtimepath+=~/.vim/.bundle/neobundle.vim
 	call neobundle#rc(expand('~/.vim/.bundle'))
 endif
 
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplte.vim'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/unite-outline'
+NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'Lokaltog/vim-easymotion'
 
@@ -45,7 +49,7 @@ hi EasyMotionShade ctermbg=none ctermfg=blue
 "---------------------------------------------------------
 let g:unite_source_history_yank_enable=1
 let g:unite_source_file_mru_limit = 200
-nmap ,uy :<C-u>Unite history/ynak<CR>
+nmap ,uy :<C-u>Unite history/yank<CR>
 nmap ,ub :<C-u>Unite buffer<CR>
 nmap ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nmap ,ur :<C-u>Unite -buffer-name=register register<CR>
