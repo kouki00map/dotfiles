@@ -4,7 +4,7 @@ scriptencoding utf-8
 " An example for a Japanese version gvimrc file.
 " 日本語版のデフォルトGUI設定ファイル(gvimrc) - Vim7用試作
 "
-" Last Change: 07-May-2013.
+" Last Change: 15-Aug-2013.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -63,15 +63,17 @@ endif
 
 "---------------------------------------------------------------------------
 " カラー設定:
-colorscheme morning
-
+syntax enable
+set background=dark
+colorscheme hybrid
 "---------------------------------------------------------------------------
 " フォント設定:
 "
 if has('win32')
   " Windows用
-  set guifont=MS_Gothic:h12:cSHIFTJIS
-  "set guifont=MS_Mincho:h12:cSHIFTJIS
+  "set guifont=Ricty\ Discord:h13:cSHIFTJIS
+  "set guifont=MigMix\ 1M:h10:cSHIFTJIS
+  set guifont=TEST:h09:cSHIFTJIS
   " 行間隔の設定
   set linespace=1
   " 一部のUCS文字の幅を自動計測して決める
@@ -89,9 +91,9 @@ endif
 " ウインドウに関する設定:
 "
 " ウインドウの幅
-set columns=80
+set columns=120
 " ウインドウの高さ
-set lines=25
+set lines=55
 " コマンドラインの高さ(GUI使用時)
 set cmdheight=2
 " 画面を黒地に白にする (次行の先頭の " を削除すれば有効になる)
@@ -142,9 +144,13 @@ set mousehide
 " いう問題が生じ得る。しかしあまりにレアなケースであると考えられるので無視す
 " る。
 "
-if &guioptions =~# 'M'
-  let &guioptions = substitute(&guioptions, '[mT]', '', 'g')
-endif
+" if &guioptions =~# 'M'
+"   let &guioptions = substitute(&guioptions, '[mT]', '', 'g')
+" endif
+" ツールバー削除
+set guioptions-=T
+" メニュー削除
+"set guioptions-=m
 
 "---------------------------------------------------------------------------
 " その他、見栄えに関する設定:
@@ -175,3 +181,52 @@ if has('printer')
 endif
 
 " Copyright (C) 2009-2013 KaoriYa/MURAOKA Taro
+
+"----------------------------------------
+" 表示設定
+"----------------------------------------
+" スプラッシュ(起動時のメッセージ)を表示しない
+set shortmess+=I
+" エラー時のベルを抑制
+set noerrorbells
+" ビジュアルベル
+set visualbell
+
+""""""""""""""""""""""""""""""
+"挿入モード時、ステータスラインの色を変更
+""""""""""""""""""""""""""""""
+let g:hi_insert = 'highlight StatusLine guifg=darkblue guibg=darkyellow gui=none ctermfg=blue ctermbg=yellow cterm=none'
+
+if has('syntax')
+  augroup InsertHook
+    autocmd!
+    autocmd InsertEnter * call s:StatusLine('Enter')
+    autocmd InsertLeave * call s:StatusLine('Leave')
+  augroup END
+endif
+" if has('unix') && !has('gui_running')
+"   " ESCでキー入力待ちになる対策
+"   inoremap <silent> <ESC> <ESC>
+" endif
+
+let s:slhlcmd = ''
+function! s:StatusLine(mode)
+  if a:mode == 'Enter'
+    silent! let s:slhlcmd = 'highlight ' . s:GetHighlight('StatusLine')
+    silent exec g:hi_insert
+  else
+    highlight clear StatusLine
+    silent exec s:slhlcmd
+    redraw
+  endif
+endfunction
+
+function! s:GetHighlight(hi)
+  redir => hl
+  exec 'highlight '.a:hi
+  redir END
+  let hl = substitute(hl, '[\r\n]', '', 'g')
+  let hl = substitute(hl, 'xxx', '', '')
+  return hl
+endfunction
+
