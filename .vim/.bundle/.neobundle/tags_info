@@ -1,9 +1,12 @@
+emmet-vim
 neocomplte.vim
 neomru.vim
 neosnippet-snippets
 neosnippet.vim
+switch.vim
 unite-outline
 unite.vim
 vim-easymotion
 vim-ref
+vim-surround
 vimfiler.vim

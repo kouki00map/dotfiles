@@ -862,6 +862,12 @@ g:unite_kind_file_vertical_preview		*g:unite_kind_file_vertical_preview*
 
 		The default value is 0.
 
+					*g:unite_kind_file_preview_max_filesize*
+g:unite_kind_file_preview_max_filesize
+		It is max file size of preview action in file kind.
+
+		The default value is 1000000.
+
 			*g:unite_kind_openable_persist_open_blink_time*
 g:unite_kind_openable_persist_open_blink_time
 		The amount of blink time after "persist_open" action from
@@ -2508,6 +2514,11 @@ converter_tail
 		A converter which converts a candidate's word into the
 		tail of the filename.
 
+					*unite-filter-converter_tail_abbr*
+converter_tail_abbr
+		A converter which converts a candidate's abbr into the
+		tail of the filename.
+
 					*unite-filter-converter_file_directory*
 converter_file_directory
 		A converter which separates the file and directory.
@@ -2555,6 +2566,7 @@ kind to define "open" action.
 	below		Open the file in the bottom, splitting horizontally.
 	persist_open	Open the file in alternate window.  unite window
 			isn't closed.
+	tabsplit	Open the files and vsplit in a new tab.
 
 cdable						*unite-action-cdable*
 Defines an interface for files you can move to with cd command.

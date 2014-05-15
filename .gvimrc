@@ -69,8 +69,9 @@ colorscheme molokai
 "
 if has('win32')
   " Windows用
-  set guifont=MS_Mincho:h10:cSHIFTJIS
-"  set guifont=MS_Gothic:h12:cSHIFTJIS
+"  set guifont=MS_Mincho:h10:cSHIFTJIS
+"  set guifont=MS_Gothic:h18:cSHIFTJIS
+  set guifont=Ricty_Diminished_Discord:h18:cSHIFTJIS
   "set guifont=MS_Mincho:h12:cSHIFTJIS
   " 行間隔の設定
   set linespace=1
@@ -146,8 +147,8 @@ set guioptions+=a
 "  let &guioptions = substitute(&guioptions, '[mT]', '', 'g')
 "endif
 
-set guioptions-=m
-set guioptions-=T
+"set guioptions-=m
+"set guioptions-=T
 
 "---------------------------------------------------------------------------
 " その他、見栄えに関する設定:
