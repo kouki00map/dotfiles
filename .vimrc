@@ -19,6 +19,10 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'AndrewRadev/switch.vim'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'osyo-manga/vim-over'
+NeoBundle 'haya14busa/vim-migemo'
+NeoBundle 'altercation/vim-colors-solarized'
 
 filetype plugin on
 filetype indent on
@@ -84,22 +88,20 @@ endif
 " ===========================================
 " switch.vim
 " ===========================================
-let g:variable_style_switch_definitions = [
-\   {
-\     'f': {
-\       'foo': 'bar'
-\     },
-\
-\     'b': {
-\       'bar': 'foo'
-\     },
-\   }
-\ ]
-nnoremap <Leader>t :<C-u>Switch<CR>
+nnoremap <Space>s  :<C-u>Switch<CR>
 
+" ===========================================
+" over.vim
+" ===========================================
 
+" over.vimの起動
+nnoremap <silent> <Leader>m :OverCommandLine<CR>
 
+" カーソル下の単語をハイライト付きで置換
+nnoremap sub :OverCommandLine<CR>%s/<C-r><C-w>//g<Left><Left>
 
+" コピーした文字列をハイライト付きで置換
+nnoremap subp y:OverCommandLine<CR>%s!<C-r>=substitute(@0, '!', '\\!', 'g')<CR>!!gI<Left><Left><Left>
 
 
 
@@ -111,6 +113,10 @@ colorscheme blue
 
 " 行番号を表示
 set number
+" カーソル行の背景色
+set cursorline
+" カーソル位置の絡む背景色
+set cursorcolumn
 " ルーラー表示
 set ruler
 " タブ改行を表示
@@ -144,6 +150,7 @@ set autoindent
 set cindent
 " スマートインデント
 set smartindent
+set shiftwidth=4
 " カーソルキーでの行末/行頭移動
 set whichwrap=b,s,[,],<,>
 " バックスペースでインデント改行削除
@@ -156,6 +163,11 @@ set showmatch
 set wildmenu
 " 自動折り返し日本語
 set formatoptions+=mM
+" 行頭行末の左右移動で行をまたぐ
+set whichwrap=b,s,h,l,<,>,[,]
+" 上下8行の視界を確保
+set scrolloff=8
+
 
 "---------------------------------------------------------------------------
 " 検索
