@@ -69,12 +69,12 @@ colorscheme molokai
 "
 if has('win32')
   " Windows用
-"  set guifont=MS_Mincho:h10:cSHIFTJIS
+"set guifont=MS_Mincho:h9:cSHIFTJIS
 "  set guifont=MS_Gothic:h10
-"  set guifont=Ricty_Diminished_Discord:h16:cSHIFTJIS
- set guifont=Envy_Code_R:h10
- set guifontwide=MS_Gothic:h9
-"  set guifont=TEST:h10
+" set guifont=Ricty_Diminished_Discord:h16:cSHIFTJIS
+ set guifont=Envy_Code_R:h12:
+ set guifontwide=MS_Gothic:h12:
+" set guifont=TEST:h9
   "set guifont=MS_Mincho:h12:cSHIFTJIS
   " 行間隔の設定
   set linespace=1
